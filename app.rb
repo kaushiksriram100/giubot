@@ -2,7 +2,7 @@ require 'sinatra'
 require 'httparty'
 require 'json'
 
-return if params[:token] != ENV['SLACK_TOKEN']
+return if params[:token] != 'fJadxB8bfPLEGC2VaEbVMCo3'
 
 post '/dateway' do
 	message = params[:text].gsub(params[:trigger_word], '').strip
