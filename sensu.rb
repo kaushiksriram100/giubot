@@ -4,7 +4,7 @@ require 'json'
 
 #return if params[:token] != 'fJadxB8bfPLEGC2VaEbVMCo3'
 
-post '/gateway' do
+post '/sensu' do
 	message = params[:text].gsub(params[:trigger_word], '').strip
 
 	action, repo = message.split('_').map {|c| c.strip.downcase }
