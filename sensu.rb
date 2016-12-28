@@ -2,6 +2,12 @@ require 'sinatra'
 require 'httparty'
 require 'json'
 
+#get
+get '/test' do
+  'Hello world!'
+end
+
+
 #post
 post '/sensu' do
 #return if params[:token] != 'fJadxB8bfPLEGC2VaEbVMCo3'
