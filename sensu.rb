@@ -2,7 +2,7 @@ require 'sinatra'
 require 'httparty'
 require 'json'
 
-
+#post
 post '/sensu' do
 #return if params[:token] != 'fJadxB8bfPLEGC2VaEbVMCo3'
 	message = params[:text].gsub(params[:trigger_word], '').strip
